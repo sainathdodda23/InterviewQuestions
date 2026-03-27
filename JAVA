@@ -1,0 +1,73 @@
+==================== CORE JAVA ====================
+
+1. Difference between HashMap and ConcurrentHashMap
+a) HashMap is non-thread-safe; ConcurrentHashMap is thread-safe with fine-grained locking.
+b) HashMap allows null keys/values and is faster in single-threaded contexts. ConcurrentHashMap uses bucket-level locking (or CAS in newer JDKs) to allow concurrent reads/writes without blocking the entire map.
+
+2. Difference between HashMap, ConcurrentHashMap, Hashtable
+a) Hashtable is legacy synchronized, HashMap is non-synchronized, ConcurrentHashMap is modern thread-safe.
+b) Hashtable locks the entire map (poor scalability). HashMap is faster but unsafe in concurrency. ConcurrentHashMap improves scalability with segment/bucket-level locks and disallows null keys/values.
+
+3. How HashMap works internally?
+a) HashMap stores entries in buckets using hashCode and equals.
+b) It uses an array of buckets, applies hashCode() to determine index, resolves collisions via linked lists or balanced trees (since JDK 8). Rehashing occurs when load factor exceeds threshold.
+
+4. JVM Memory Model (Heap, Stack, Metaspace)
+a) Heap stores objects, Stack stores method frames, Metaspace stores class metadata.
+b) Heap is divided into Young/Old generations, Stack holds local variables and call frames, Metaspace (post-Java 8) stores class definitions replacing PermGen.
+
+5. Java Memory Areas
+a) Heap, Stack, Metaspace, Code Cache.
+b) Heap for objects, Stack for execution, Metaspace for class metadata, Code Cache for JIT compiled code.
+
+6. Comparable vs Comparator
+a) Comparable defines natural ordering; Comparator defines custom ordering.
+b) Comparable implemented in class (compareTo), Comparator is external (compare). Comparator allows multiple sorting strategies.
+
+7. Multithreading & synchronization issues
+a) Race conditions occur without synchronization.
+b) Threads accessing shared resources can cause inconsistent states. Synchronization (locks, volatile, atomic classes) ensures visibility and ordering.
+
+8. Functional Interfaces & Lambda expressions
+a) Functional interfaces have one abstract method; lambdas implement them concisely.
+b) Examples: Runnable, Callable, Predicate. Lambdas reduce boilerplate and enable functional programming.
+
+9. ExecutorService, Callable, Future
+a) ExecutorService manages threads, Callable returns results, Future holds async result.
+b) ExecutorService abstracts thread pools, Callable allows checked exceptions and return values, Future provides result retrieval and cancellation.
+
+10. Checked vs Unchecked Exceptions
+a) Checked must be declared/handled; Unchecked are runtime.
+b) Checked (IOException) enforce handling at compile time. Unchecked (NullPointerException) occur at runtime without declaration.
+
+11. Optional: orElse vs orElseGet
+a) orElse always evaluates; orElseGet evaluates lazily.
+b) orElse executes even if value present, orElseGet executes supplier only if empty.
+
+12. Synchronized vs ReentrantLock
+a) Synchronized is implicit; ReentrantLock is explicit with more features.
+b) ReentrantLock supports tryLock, fairness, interruptible locks. Synchronized is simpler but less flexible.
+
+13. Optimistic vs Pessimistic Locking
+a) Optimistic assumes no conflict; Pessimistic prevents conflict by locking.
+b) Optimistic uses versioning (CAS), retries on conflict. Pessimistic locks resource upfront, reducing concurrency.
+
+14. String intern() method
+a) Intern stores string in pool to reuse.
+b) intern() returns reference from string pool, saving memory and enabling == comparison.
+
+15. == vs equals()
+a) == compares references; equals() compares values.
+b) For objects, == checks memory address, equals() can be overridden for logical equality.
+
+16. Thread safety & concurrency
+a) Thread safety ensures consistent state under concurrency.
+b) Achieved via immutability, synchronization, atomic classes, concurrent collections.
+
+17. OutOfMemoryError causes & troubleshooting
+a) Caused by memory leaks or insufficient heap.
+b) Common causes: large objects, unclosed resources, excessive caching. Troubleshoot via heap dumps, GC logs, profiling.
+
+18. How to make class thread-safe?
+a) Use immutability, synchronization, or concurrent utilities.
+b) Immutable classes are inherently safe. Synchronize shared state or use ConcurrentHashMap, AtomicInteger.
