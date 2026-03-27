@@ -1,0 +1,243 @@
+==================== CORE JAVA ====================
+1. Difference between HashMap and ConcurrentHashMap?
+2. Difference between HashMap, ConcurrentHashMap, Hashtable?
+3. How HashMap works internally?
+4. JVM Memory Model (Heap, Stack, Metaspace)
+5. Java Memory Areas
+6. Comparable vs Comparator
+7. Multithreading & synchronization issues
+8. Functional Interfaces & Lambda expressions
+9. ExecutorService, Callable, Future
+10. Checked vs Unchecked Exceptions
+11. Optional: orElse vs orElseGet
+12. Synchronized vs ReentrantLock
+13. Optimistic vs Pessimistic Locking
+14. String intern() method
+15. == vs equals()
+16. Thread safety & concurrency
+17. OutOfMemoryError causes & troubleshooting
+18. How to make class thread-safe?
+
+==================== SPRING BOOT & MICROSERVICES ====================
+1. Spring Boot auto-configuration internals
+2. @Component vs @Service vs @Repository
+3. Dependency Injection working
+4. Spring Bean lifecycle
+5. @Transactional internals
+6. JWT Authentication flow
+7. Global exception handling
+8. Lazy vs Eager loading
+9. Distributed transactions
+10. REST vs Kafka/RabbitMQ
+11. API Gateway working
+12. Circuit Breaker (Resilience4j)
+13. Microservices vs Monolith
+14. Spring Security implementation
+15. API Versioning strategies
+16. Logging & Monitoring
+17. IoC vs DI
+18. Spring Boot Starters
+19. Profiles in Spring Boot
+20. Spring Boot Actuator
+21. Embedded server working
+22. CommandLineRunner
+23. Spring Data JPA usage
+24. N+1 problem in JPA
+25. Multiple data sources config
+26. Flyway / Liquibase
+27. @RestController vs @Controller
+28. @RequestParam vs @PathVariable
+29. @Bean vs @Component
+30. Unit testing in Spring Boot
+31. Caching in Spring Boot
+32. Scheduling in Spring Boot
+33. Reactive programming
+34. Spring Boot lifecycle
+35. Dockerizing Spring Boot app
+
+==================== SYSTEM DESIGN ====================
+1. Design URL Shortener
+2. Design Payment System
+3. Design Chat Application
+4. Design Notification System
+5. Design Video Streaming Platform
+6. Design API Rate Limiter
+7. Design E-commerce Checkout
+8. Design Ride-Hailing App
+9. Rate Limiter (5 req/min)
+10. Scaling microservices
+11. Caching (Redis vs DB)
+12. Data consistency
+13. SAGA patterns
+14. Distributed transactions
+15. Load Balancer vs API Gateway
+16. PUT vs PATCH
+17. Database sharding
+18. Handling millions of records
+19. JPA vs Hibernate
+20. Secrets management (AWS Secrets Manager)
+
+==================== AWS & CLOUD ====================
+1. EC2 vs S3 vs RDS
+2. IAM & security
+3. Load balancing in AWS
+4. Deploy Spring Boot on AWS
+
+==================== DOCKER & DEVOPS ====================
+1. Docker basics
+2. Docker Image vs Container
+3. CI/CD pipeline
+4. Jenkins automation
+
+==================== DATABASE & PERFORMANCE ====================
+1. Indexing
+2. SQL vs NoSQL
+3. Query optimization
+4. Connection pooling
+5. ACID properties
+6. Pagination & sorting
+7. Concurrent DB updates
+8. Database partitioning
+9. Rank() & Partition functions
+
+==================== REST & DISTRIBUTED SYSTEMS ====================
+1. HTTP Status codes
+2. Handling duplicate events
+3. REST vs Messaging
+
+==================== DSA ====================
+1. LRU/LFU Cache
+2. Median from Data Stream
+3. Word Ladder
+4. Merge K Sorted Lists
+5. Detect cycle in graph
+6. Maximum Subarray
+7. Kth Largest in stream
+8. Task Scheduler
+9. Three Sum
+10. Two Sum
+11. Balanced Parentheses
+12. Binary Search
+13. Reverse Linked List in pairs
+14. Validate custom expression
+15. K most frequent words
+
+==================== JAVA STREAMS ====================
+1. First non-repeating character
+2. Reverse words
+3. Remove duplicates
+4. Sum of salaries by department
+5. Max salary by department
+6. Avg salary by department
+7. Sort students
+8. Numbers divisible by 5
+9. Sort descending
+10. Nth smallest element
+11. Last element in array
+12. Sum of first 2 numbers
+13. Sum of unique elements
+14. Second largest number
+15. Words with k vowels
+16. Count characters
+17. Find duplicates
+18. Intersection of lists
+19. Group employees
+20. Even/odd partition
+21. Longest string
+22. Remove duplicates (order)
+23. Join streams
+24. Reverse words in sentence
+25. Palindrome check
+26. Prime number check
+
+==================== CODING / PRACTICAL ====================
+1. Filter persons < 25 & uppercase names
+2. Increase salary by 10%
+3. Collection differences
+4. Numbers starting with 1 (Java 8)
+5. Second highest salary per department
+
+==================== HR / BEHAVIORAL ====================
+1. Tell me about yourself
+2. Project experience details
+3. Backend vs Frontend contribution
+4. Why this company?
+5. Handling pressure
+6. Working with global teams
+7. Career goals
+
+
+==================== MUST ADD (HIGH IMPACT TOPICS) ====================
+
+🔹 Concurrency (Advanced)
+1. volatile vs synchronized
+2. ThreadLocal usage
+3. CompletableFuture (async programming)
+4. Deadlock detection & prevention
+5. Producer-Consumer problem
+6. Immutability in concurrency
+
+🔹 JVM Internals (Advanced)
+7. Garbage Collection (G1, CMS basics)
+8. Minor vs Major GC
+9. Memory leaks in production
+10. ClassLoader hierarchy
+11. JIT compiler basics
+
+🔹 API Design
+12. Idempotency in APIs
+13. Pagination (cursor vs offset)
+14. API rate limiting strategies
+15. Request validation & error handling
+
+🔹 Microservices (Real-world)
+16. Service-to-service communication (REST vs Kafka vs gRPC)
+17. Distributed tracing (Zipkin, Sleuth)
+18. Config management (Spring Cloud Config)
+19. Service discovery (Eureka)
+20. Blue-Green / Canary deployments
+
+🔹 Kafka / Messaging
+21. Kafka architecture (broker, topic, partition)
+22. Consumer groups
+23. Offset management
+24. Exactly-once vs At-least-once delivery
+25. Retry & Dead Letter Queue (DLQ)
+
+🔹 Caching (Advanced)
+26. Cache eviction strategies (LRU, LFU)
+27. Cache aside vs write-through vs write-back
+28. Cache consistency issues
+29. Distributed caching challenges
+
+🔹 Database (Advanced)
+30. Isolation levels
+31. Database deadlocks
+32. Index types (B-Tree, Composite)
+33. Query execution plan (EXPLAIN)
+34. Normalization vs Denormalization
+
+🔹 Security
+35. OAuth2 vs JWT
+36. CSRF & CORS
+37. Encryption vs Hashing (bcrypt)
+38. API security best practices
+
+🔹 Logging & Monitoring
+39. Log levels strategy
+40. Structured logging
+41. Prometheus & Grafana basics
+42. Alerting strategies
+
+🔹 Testing
+43. Unit vs Integration vs E2E testing
+44. Mockito basics
+45. Testcontainers
+46. Writing testable code
+
+🔹 Bonus / Differentiators
+47. Feature flags
+48. Circuit breaker tuning
+49. Bulkhead pattern
+50. Event-driven architecture
+51. Saga (choreography vs orchestration)
